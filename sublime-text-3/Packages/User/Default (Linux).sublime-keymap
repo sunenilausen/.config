@@ -1,8 +1,12 @@
 [
+	//Standard
 	{ "keys": ["ctrl+0"], "command": "reset_font_size" },
 	{ "keys": ["ctrl+<"], "command": "toggle_comment", "args": { "block": false } },
 	{ "keys": ["ctrl+shift+<"], "command": "toggle_comment", "args": { "block": true } },
 	{ "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },
+  { "keys": ["alt+d"], "command": "goto_definition" },
+
+	//Origami
 	{ "keys": ["ctrl+shift+w"], "command": "destroy_pane", "args": {"direction": "self"} },
 	{ "keys": ["super+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"}},
 	{ "keys": ["ctrl+shift+x"], "command": "toggle_zoom_pane", "args": {"fraction": 1} },
@@ -10,15 +14,17 @@
 	{ "keys": ["alt+left"], "command": "travel_to_pane", "args": {"direction": "left"} },
 	{ "keys": ["alt+down"], "command": "travel_to_pane", "args": {"direction": "down"} },
 	{ "keys": ["alt+up"], "command": "travel_to_pane", "args": {"direction": "up"} },
+
 	//Side bar stuff
-	{ "keys": ["ctrl+k", "ctrl+r"], "command": "reveal_in_side_bar" },
+	{ "keys": ["ctrl+k", "ctrl+l"], "command": "reveal_in_side_bar" },
 	{ "keys": ["ctrl+k", "ctrl+f"], "command": "focus_side_bar" },
 	{ "keys": ["ctrl+k", "ctrl+b"], "command": "toggle_side_bar" },
-	//Origami
- 	{ "keys": ["ctrl+shift+e"], "command": "travel_to_pane", "args": {"direction": "right"} },
-	{ "keys": ["ctrl+shift+o"], "command": "travel_to_pane", "args": {"direction": "down"} },
+	{ "keys": ["ctrl+k", "ctrl+m"], "command": "side_bar_move" },
+	{ "keys": ["f5"], "command": "refresh_folder_list" },
 	//Gitgutter
 	{ "keys": ["ctrl+shift+alt+j"], "command": "git_gutter_next_change" },
-    { "keys": ["ctrl+shift+alt+k"], "command": "git_gutter_prev_change" },
-    { "keys": ["ctrl+shift+alt+z"], "command": "git_gutter_revert_change" },
+  { "keys": ["ctrl+shift+alt+k"], "command": "git_gutter_prev_change" },
+  { "keys": ["ctrl+shift+alt+z"], "command": "git_gutter_revert_change" },
+  //Git
+  { "keys": ["ctrl+g", "ctrl+s"], "command": "git_raw", "args": { "command": "git add", "append_current_file": true } },
 ]
