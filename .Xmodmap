@@ -1,0 +1,17 @@
+keycode 66 = Mode_switch
+keysym j = j J Left
+keysym l = l L Right
+keysym i = i I Up
+keysym k = k K Down
+keysym h = h H Home
+keysym n = n N End
+keysym 7 = 7 slash braceleft
+keysym 8 = 8 parenleft bracketleft
+keysym 9 = 9 parenright bracketright
+keysym 0 = 0 equal braceright
+keysym u = u U Prior
+keysym o = o O Next
+keysym d = d D Delete
+keysym r = r R BackSpace
+keysym e = e E Escape
+keysym f = f F F11
